@@ -104,7 +104,7 @@ class PowerUpPush : PowerUp
     {
         var dir = (body.transform.position - explosionPosition);
         float wearoff = 1 - (dir.magnitude / explosionRadius);
-        body.AddForce (dir.normalized * explosionForce * wearoff);
+        body.AddForce(dir.normalized * explosionForce * wearoff);
     }
 }
 
